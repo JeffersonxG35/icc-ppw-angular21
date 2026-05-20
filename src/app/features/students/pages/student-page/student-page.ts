@@ -4,6 +4,7 @@ import { Router, RouterLink } from '@angular/router';
 @Component({
   selector: 'app-student-page',
   imports: [RouterLink],
+  styleUrl: './student-page.css',
   templateUrl: './student-page.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
