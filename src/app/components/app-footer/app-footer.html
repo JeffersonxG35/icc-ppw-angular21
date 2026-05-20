@@ -2,23 +2,22 @@
   <h3>Pipes de Angular</h3>
   
   <p class="pipe-item">
-    <strong>1. Date Pipe:</strong> {{ hoy | date:'longDate' }}
+    <strong>1. Fecha:</strong> {{ hoy | date:'longDate' }}
   </p>
   
   <p class="pipe-item">
-    <strong>2. Currency Pipe:</strong> {{ costoCurso | currency:'USD' }}
+    <strong>2. Costo del curso:</strong> {{ costoCurso | currency:'USD' }}
   </p>
 
   <p class="pipe-item">
-    <strong>3. Percent Pipe:</strong> {{ progreso() | percent }}
+    <strong>3. Progreso:</strong> {{ progreso() | percent }}
   </p>
 
   <p class="pipe-item">
-    <strong>4. TitleCase Pipe:</strong> {{ estudiante | titlecase }}
+    <strong>4. Nombre:</strong> {{ estudiante | titlecase }}
   </p>
 
   <p class="pipe-item">
-    <strong>5. Json Pipe:</strong> 
-    <code>{{ configuracion | json }}</code>
-  </p>
+  <strong>5. Versión:</strong> {{ version }}
+</p>
 </footer>

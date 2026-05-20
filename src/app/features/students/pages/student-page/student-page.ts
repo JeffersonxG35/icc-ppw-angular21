@@ -12,7 +12,7 @@ export class StudentPage {
   readonly students = signal([
     { id: 1, name: 'Jefferson' },
     { id: 2, name: 'Maria' },
-    { id: 3, name: 'Juan' },
+    { id: 3, name: 'Leonel' },
     { id: 4, name: 'Pepe' },
     { id: 5, name: 'Juan' },
   ]);
