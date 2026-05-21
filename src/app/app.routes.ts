@@ -4,6 +4,7 @@ import { StudentDetailPage } from './features/students/pages/student-detail-page
 import { StudentPage } from './features/students/pages/student-page/student-page';
 import { SignupPage } from './features/signup/pages/signup-page/signup-page';
 import { LayoutsPage } from './features/layouts/pages/layouts-page';
+import { ProfilePage } from './features/profile/pages/profile-page/profile-page';
 
 export const routes: Routes = [
   { path: '', component: HomePage },
@@ -11,6 +12,7 @@ export const routes: Routes = [
   { path: 'students/:id', component: StudentDetailPage },
   {path: 'layouts', component: LayoutsPage},
   { path: 'signup', component: SignupPage },  
+  { path: 'profile', component: ProfilePage },
   //redireccionamiento
   { path: '**', redirectTo: '' },
 ];
