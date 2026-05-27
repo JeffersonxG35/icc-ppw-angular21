@@ -1,15 +1,18 @@
 @import "tailwindcss";
-
-@theme {
-    --color-brand: #0f4c81;
-    --color-brand-strong: #0b3a66;
-    --color-surface: #ffffff;
-    --breakpoint-xs: 30rem;
-    --breakpoint-3xl: 120rem;
-}
+@plugin "daisyui";
 
 @layer base {
     body {
-        @apply bg-slate-100 text-slate-900 antialiased;
+        @apply min-h-screen bg-gradient-to-b from-sky-50 via-white to-cyan-50 text-slate-900;
+    }
+}
+
+@layer components {
+    .glass-surface {
+        @apply border border-white/30 bg-white/10 backdrop-blur-xl shadow-lg;
+    }
+
+    .gradient-surface {
+        @apply bg-gradient-to-br from-sky-500 via-cyan-400 to-indigo-500 text-white;
     }
 }
